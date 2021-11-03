@@ -24,7 +24,7 @@ How to start:
 
 The initial start may take several minutes if container base images need to be pulled first. Equally if you upgrade Docker Desktop (Windows, MacOS) or Docker Engine (Linux), the first startup after the upgrade may take several minutes as well.
 
-## Creating Solution and Project
+## Creating Solution and Projects
 
 Use commands such as `dotnet new` to create the solution file and one or more project files.
 
