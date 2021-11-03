@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+   fooservice:
+      container_name: fooservice-dev
+      hostname: fooservice-dev.local
+      build:
+         context: .
+      working_dir: /src
+      # expose ports if needed, e.g., by commenting in the following two lines
+      # and choosing suitable port numbers.
+      # ports:
+        # - 9999:4242
+      volumes:
+         - ..:/src:cached
+      command: >
+         bash -c "pwsh /src/.devcontainer/init.ps1 && pwsh /src/.devcontainer/setversion.ps1 && sleep infinity"
+      networks:
+         # set this to one of the network names specified in 'networks:'
+         acme:
+
+networks:
+   # Network can be named anything. A company name is a good choice.
+   acme:

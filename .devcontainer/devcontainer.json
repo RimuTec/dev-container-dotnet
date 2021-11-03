@@ -1,0 +1,21 @@
+{
+   "name": "fooservice-dev",
+   "dockerComposeFile": [
+      "docker-compose.yml"
+   ],
+   "service": "fooservice",
+   "workspaceFolder": "/src",
+   "extensions": [
+      "fernandoescolar.vscode-solution-explorer",
+      "formulahendry.dotnet-test-explorer",
+      "eamodio.gitlens",
+      "editorconfig.editorconfig",
+      "josefpihrt-vscode.roslynator",
+      "k--kato.docomment",
+      "ms-dotnettools.csharp",
+      "ms-vscode.powershell",
+      "shd101wyy.markdown-preview-enhanced"
+   ],
+   "remoteUser": "dev",
+   "shutdownAction": "stopCompose"
+}

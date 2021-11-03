@@ -1,0 +1,24 @@
+#!/bin/sh
+
+echo Running entrypoint.sh
+
+#################################################################################################################
+# Provided the Dockerfile doesn't change the user, this script will run as 'root'. However, once VS Code connects
+# it will connect remotely as user 'dev' [Manfred, 19sep2021]
+
+
+#################################################################################################################
+# Set version to be shared by all csproj files:
+chmod +x /src/.devcontainer/setversion.ps1
+# Option '+x' adds execute permission for the file
+
+
+#################################################################################################################
+# Change ownership of all directories and files in the mounted volume:
+chown -R dev:dev /src
+# Option '-R' applies the ownerhip change recursively on files and directories in /src
+
+
+#################################################################################################################
+# Finally invoke what has been specified as CMD in Dockerfile or command in docker-compose:
+"$@"
