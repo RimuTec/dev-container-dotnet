@@ -26,10 +26,12 @@ The initial start may take several minutes if container base images need to be p
 
 ## Creating Solution and Projects
 
+Before you start using the template, I'd recommend to rename all occurances of `fooservice` in this repository to something more meaningful in your context.
+
 Use commands such as `dotnet new` to create the solution file and one or more project files.
 
 ## Version Information
 
-This version of the repo is for .NET SDK version 5.0.402.
+This version of the repo is for .NET SDK version 6.0.100.
 
 You can use a different versino of the .NET SDK by choosing a different base image in file `Dockerfile`.
