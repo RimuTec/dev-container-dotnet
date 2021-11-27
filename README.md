@@ -2,7 +2,7 @@
 
 This is a template repository for creating new repositories that use the same directory structure and files as this one.
 
-This is intended to be used for .NET Core development using VS Code 
+This environment, which uses a dev container, is intended to be used for .NET 6.0 development using VS Code.
 
 ## Getting Started
 
@@ -16,7 +16,6 @@ Prerequisites (most recent stable version unless stated otherwise):
 How to start:
 1. Create clone of this repo
 1. At the root of the clone in a terminal, e.g., `bash` execute the following:
-
    ```bash
    devcontainer open .
    ```
@@ -26,7 +25,7 @@ The initial start may take several minutes if container base images need to be p
 
 ## Creating Solution and Projects
 
-Before you start using the template, I'd recommend to rename all occurances of `fooservice` in this repository to something more meaningful in your context.
+Before you start using the template but after you have cloned it, I'd recommend renaming all occurances of `fooservice` in this repository to something that is more meaningful in your context.
 
 Use commands such as `dotnet new` to create the solution file and one or more project files.
 
@@ -34,4 +33,4 @@ Use commands such as `dotnet new` to create the solution file and one or more pr
 
 This version of the repo is for .NET SDK version 6.0.100.
 
-You can use a different versino of the .NET SDK by choosing a different base image in file `Dockerfile`.
+You can use a different version of the .NET SDK by choosing a different base image in file `Dockerfile`. If you change the base image for the dev container, you also need to adjust the target framework in your `*.csproj` files (or equivalent).
