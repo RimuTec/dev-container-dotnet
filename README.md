@@ -15,7 +15,7 @@ Prerequisites (most recent stable version unless stated otherwise):
 
 How to start:
 1. Create clone of this repo
-1. At the root of the clone in a terminal, e.g., `bash` execute the following:
+1. In a terminal, e.g., `bash`, and at the root of the cloned repo execute the following:
    ```bash
    devcontainer open .
    ```
