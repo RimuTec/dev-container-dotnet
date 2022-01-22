@@ -1,7 +1,11 @@
 <Project>
   <PropertyGroup>
-    <Version>0.9.697.1949</Version>
+    <TargetFramework>net6.0</TargetFramework>
+    <!-- ImplicitUsings flag includes some standard using directives. More details available at
+         https://docs.microsoft.com/en-us/dotnet/core/tutorials/top-level-templates#implicit-using-directives -->
+    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <WarningsAsErrors>nullable</WarningsAsErrors>
+    <RootNamespace>Acme</RootNamespace>
   </PropertyGroup>
 </Project>

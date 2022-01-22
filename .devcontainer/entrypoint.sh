@@ -8,12 +8,6 @@ echo Running entrypoint.sh
 
 
 #################################################################################################################
-# Set version to be shared by all csproj files:
-chmod +x /src/.devcontainer/setversion.ps1
-# Option '+x' adds execute permission for the file
-
-
-#################################################################################################################
 # Change ownership of all directories and files in the mounted volume:
 chown -R dev:dev /src
 # Option '-R' applies the ownerhip change recursively on files and directories in /src
