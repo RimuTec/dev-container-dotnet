@@ -85,3 +85,15 @@ Omnisharp can be configured to use the .NET Core runtime instead of the packaged
    "omnisharp.useModernNet": true // use installed .NET runtime instead of packaged Mono which may cause issues with other extensions
 }
 ```
+
+### Omnisharp Didn't Load
+
+Occasionally Omnisharp doesn't load properly when creating a new dev container instance. If that is the case, you can try resolving it by reloading the VS Code window:
+1. `Ctrl`+`Shift`+`P` (MacOS `opt`+`cmd`+`P`) to open the command palette
+2. Execute `Developer: Reload Window`
+
+### Omnisharp Crashed While Debugging Tests
+
+Although it has become noticably more stable, Omnisharp occasionally crashes when you debug tests. If that happens, the Omnisharp icon in the status bar also turns red. To resolve this issue, you can try reloading the VS Code windos using this recipe:
+1. `Ctrl`+`Shift`+`P` (MacOS `opt`+`cmd`+`P`) to open the command palette
+2. Execute `Developer: Reload Window`
