@@ -1,9 +1,9 @@
 {
-   "name": "fooservice-dev",
+   "name": "dotnet-demo-dev",
    "dockerComposeFile": [
       "docker-compose.yml"
    ],
-   "service": "fooservice",
+   "service": "dotnet-demo",
    "workspaceFolder": "/src",
    "extensions": [
       "fernandoescolar.vscode-solution-explorer",
@@ -14,6 +14,7 @@
       "k--kato.docomment",
       "ms-dotnettools.csharp",
       "ms-vscode.powershell",
+      "mutantdino.resourcemonitor", // show a few resource usage metrics. This can be safely removed, if you don't like it.
       "shd101wyy.markdown-preview-enhanced"
    ],
    "remoteUser": "dev",

@@ -1,9 +1,9 @@
 version: '3.7'
 
 services:
-   fooservice:
-      container_name: fooservice-dev
-      hostname: fooservice-dev.local
+   dotnet-demo:
+      container_name: dotnet-demo-dev
+      hostname: dotnet-demo-dev.local
       build:
          context: .
       working_dir: /src

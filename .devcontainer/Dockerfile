@@ -1,5 +1,5 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0.101
-# Version last checked on 22 Jan 2022
+FROM mcr.microsoft.com/dotnet/sdk:6.0.201
+# Version last checked on 10 Apr 2022
 # More recent images may be available at https://hub.docker.com/_/microsoft-dotnet-sdk/
 
 RUN apt-get update && \
