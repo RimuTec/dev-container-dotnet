@@ -9,8 +9,8 @@ echo Running entrypoint.sh
 
 #################################################################################################################
 # Change ownership of all directories and files in the mounted volume:
-chown -R dev:dev /src
-# Option '-R' applies the ownerhip change recursively on files and directories in /src
+chown -R dev:dev /work
+# Option '-R' applies the ownerhip change recursively on files and directories in /work
 
 
 #################################################################################################################

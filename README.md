@@ -20,7 +20,7 @@ Prerequisites (most recent stable version unless stated otherwise):
    code .
    ```
 1. At this point you may want to review the port numbers and service name(s) specified in `docker-compose.yml` and apply appropriate changes if required. Typically you will need to make changes when you have used this template for more than one repository, possibly even at first use.
-1. Use Ctrl+Shift+P to open command palette then enter or select `remote-containers: reopen in dev container`. This will build the dev container and download docker images as needed, then start the dev container and launch VS Code which remotely connects to the dev container. The repository clone is mounted into the dev container at path `/src`.
+1. Use Ctrl+Shift+P to open command palette then enter or select `remote-containers: reopen in dev container`. This will build the dev container and download docker images as needed, then start the dev container and launch VS Code which remotely connects to the dev container. The repository clone is mounted into the dev container at path `/work`.
 
 The initial start may take several minutes if container base images need to be pulled first. Equally if you upgrade Docker Desktop (Windows, MacOS) or Docker Engine (Linux), the first startup after the upgrade may take several minutes as well. If the images are already available, startup should be less than 1 minute (about 10 seconds on my machine).
 

@@ -4,7 +4,7 @@
       "docker-compose.yml"
    ],
    "service": "dotnet-demo",
-   "workspaceFolder": "/src",
+   "workspaceFolder": "/work",
    "extensions": [
       "fernandoescolar.vscode-solution-explorer",
       "formulahendry.dotnet-test-explorer",

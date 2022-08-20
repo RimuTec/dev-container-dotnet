@@ -24,7 +24,7 @@ RUN groupadd -g 1000 -r dev && \
 
 # Create working directory. Ownership will be changed in entrypoint.sh which
 # executes *after* the volume has been mounted.
-RUN mkdir /src
+RUN mkdir /work
 
 # Copy entrypoint script into container, make it executable, then make it the entrypoint for the container:
 COPY entrypoint.sh /entrypoint.sh
