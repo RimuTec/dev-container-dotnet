@@ -1,3 +1,4 @@
 {
-   "omnisharp.useModernNet": true // use installed .NET runtime instead of packaged Mono which may cause issues with other extensions
+   "omnisharp.useModernNet": true, // use installed .NET runtime instead of packaged Mono which may cause issues with other extensions
+   "git.rebaseWhenSync": true
 }

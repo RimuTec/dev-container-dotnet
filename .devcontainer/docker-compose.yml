@@ -10,7 +10,7 @@ services:
       # expose ports if needed, e.g., by commenting in the following two lines
       # and choosing suitable port numbers.
       # ports:
-        # - 9999:4242
+        # - "9999:4242"
       volumes:
          - ..:/src:cached
       command: >
