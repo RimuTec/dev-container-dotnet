@@ -1,5 +1,5 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0.102
-# Version last checked on 30 Jan 2023
+FROM mcr.microsoft.com/dotnet/sdk:7.0.103
+# Version last checked on 18 Feb 2023
 # More recent images may be available at https://hub.docker.com/_/microsoft-dotnet-sdk/
 
 RUN apt-get update && \
