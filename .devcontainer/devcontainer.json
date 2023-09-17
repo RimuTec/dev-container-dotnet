@@ -5,18 +5,28 @@
    ],
    "service": "dotnet-demo",
    "workspaceFolder": "/work",
-   "extensions": [
-      "fernandoescolar.vscode-solution-explorer",
-      "formulahendry.dotnet-test-explorer",
-      "eamodio.gitlens",
-      "editorconfig.editorconfig",
-      "josefpihrt-vscode.roslynator",
-      "k--kato.docomment",
-      "ms-dotnettools.csharp",
-      "ms-vscode.powershell",
-      "mutantdino.resourcemonitor", // show a few resource usage metrics. This can be safely removed, if you don't like it.
-      "shd101wyy.markdown-preview-enhanced"
-   ],
+   "customizations": {
+      "vscode": {
+         "extensions": [
+            "donjayamanne.githistory",
+            "editorconfig.editorconfig",
+            "fernandoescolar.vscode-solution-explorer",
+            "formulahendry.dotnet-test-explorer",
+            "github.copilot@prerelease",
+            "github.copilot-chat@prerelease",
+            "github.copilot-labs@prerelease",
+            "mhutchie.git-graph",
+            "josefpihrt-vscode.roslynator",
+            "k--kato.docomment",
+            "ms-dotnettools.csharp",
+            "ms-vscode.powershell",
+            "ms-vsliveshare.vsliveshare",
+            "mutantdino.resourcemonitor",
+            "shd101wyy.markdown-preview-enhanced",
+            "usernamehw.errorlens"
+         ]
+      }
+   },
    "remoteUser": "dev",
    "shutdownAction": "stopCompose"
 }
