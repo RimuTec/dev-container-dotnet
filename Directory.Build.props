@@ -1,6 +1,6 @@
 <Project>
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <!-- ImplicitUsings flag includes some standard using directives. More details available at
          https://docs.microsoft.com/en-us/dotnet/core/tutorials/top-level-templates#implicit-using-directives -->
     <ImplicitUsings>enable</ImplicitUsings>
