@@ -27,7 +27,7 @@ The initial start may take several minutes if container base images need to be p
 
 ## Rebase on Sync
 
-This template sync's with rebase as it is designed for trunk-based development. If you use a different branch management approach or you prefer a different sync behavior, change the setting in `.vscode/settings.json` as required.
+This template sync's with rebase as it is designed for trunk-based development. If you use a different branch management approach or you prefer a different sync behavior, change the setting in `.vscode/settings.json` as required. You may also want to change the code in file `.devcontainer/init.sh` to match your preferred sync behavior.
 
 ## Creating Solution and Projects
 
@@ -37,9 +37,9 @@ Use commands such as `dotnet new` to create the solution file and one or more pr
 
 ## Version Information
 
-This version of the repo is for .NET SDK version 6.0.400. This includes these .NET runtimes:
-- Microsoft.AspNetCore.App 6.0.8
-- Microsoft.NETCore.App 6.0.8
+This version of the repo is for .NET SDK version 7.0.401. This includes these .NET runtimes:
+- Microsoft.AspNetCore.App 7.0.11
+- Microsoft.NETCore.App 7.0.11
 
 You can use a different version of the .NET SDK by choosing a different base image in file `Dockerfile`. For information about available base images, please see https://hub.docker.com/_/microsoft-dotnet-sdk/
 
