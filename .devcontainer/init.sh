@@ -1,7 +1,9 @@
 #!/bin/bash
 
+################################################################################
 echo ************************************
 echo running init.sh ...
+
 
 ################################################################################
 # Set get pull mode to rebase. Do the same for branches that may exist. However
@@ -17,6 +19,11 @@ runuser -l dev -c 'cd /work && git config branch.autosetuprebase always'
 ################################################################################
 # Set 'd' as an alias for 'dotnet' [Manfred, 25oct2022]
 runuser -l dev -c 'echo "alias d='dotnet'" >> /home/dev/.bashrc && source /home/dev/.bashrc'
+
+
+################################################################################
+# Call init.ps1 to execute commands that prefer running in PowerShell
+pwsh /work/.devcontainer/init.ps1
 
 
 ################################################################################

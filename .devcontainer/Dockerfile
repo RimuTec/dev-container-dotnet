@@ -1,5 +1,6 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0.401
 # Version last checked on 17 Sep 2023
+
+FROM mcr.microsoft.com/dotnet/sdk:8.0.407
 # More recent images may be available at https://hub.docker.com/_/microsoft-dotnet-sdk/
 
 RUN apt-get update && \
@@ -22,15 +23,15 @@ RUN groupadd -g 1000 -r dev && \
 # Option '-s' to set shell for this user (see comment in https://askubuntu.com/a/393470)
 # Option '-r' creates a system user which does not expire (see https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/)
 
-# Create working directory. Ownership will be changed in entrypoint.sh which
-# executes *after* the volume has been mounted.
-RUN mkdir /work
+# # Create working directory. Ownership will be changed in entrypoint.sh which
+# # executes *after* the volume has been mounted.
+# RUN mkdir /work
 
-# Copy entrypoint script into container, make it executable, then make it the entrypoint for the container:
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-# Option '+x' adds executable flag to the file
-ENTRYPOINT ["/entrypoint.sh"]
+# # Copy entrypoint script into container, make it executable, then make it the entrypoint for the container:
+# COPY entrypoint.sh /entrypoint.sh
+# RUN chmod +x /entrypoint.sh
+# # Option '+x' adds executable flag to the file
+# ENTRYPOINT ["/entrypoint.sh"]
 
 # Install dotnet-outdated (see https://github.com/dotnet-outdated/dotnet-outdated)
 RUN runuser -l dev -c "dotnet tool install --global dotnet-outdated-tool"

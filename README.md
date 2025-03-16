@@ -37,9 +37,9 @@ Use commands such as `dotnet new` to create the solution file and one or more pr
 
 ## Version Information
 
-This version of the repo is for .NET SDK version 7.0.401. This includes these .NET runtimes:
-- Microsoft.AspNetCore.App 7.0.11
-- Microsoft.NETCore.App 7.0.11
+This version of the repo is for .NET SDK version 8.0.407. This includes these .NET runtimes:
+- Microsoft.AspNetCore.App 8.0.14
+- Microsoft.NETCore.App 8.0.14
 
 You can use a different version of the .NET SDK by choosing a different base image in file `Dockerfile`. For information about available base images, please see https://hub.docker.com/_/microsoft-dotnet-sdk/
 
